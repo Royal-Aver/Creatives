@@ -1,0 +1,52 @@
+.top {
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 100vh;
+	}
+
+	&__content {
+		margin: auto 0;
+		text-align: center;
+	}
+
+	&__title {
+		font-family: "Montserrat";
+		font-weight: 700;
+		font-size: 152px;
+		color: $header-color;
+		line-height: 187 / 152 * 100%;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		font-family: "Montserrat";
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 52 / 24 * 100%;
+		letter-spacing: 22px;
+		color: $accent-color;
+		text-transform: uppercase;
+	}
+
+	&__link {
+		position: relative;
+		bottom: 110px;
+
+		path {
+			transition: fill 0.7s;
+		}
+
+		&:hover {
+			path {
+				fill: $accent-color;
+			}
+		}
+	}
+}
