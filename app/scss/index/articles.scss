@@ -1,0 +1,73 @@
+.articles {
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 450px 450px;
+	}
+
+	&__item {
+		&--black {
+			background-color: $black-white;
+		}
+
+		&--white {
+			background-color: $header-color;
+			color: $black-white;
+		}
+	}
+
+	&__content {
+		margin-left: auto;
+		padding: 70px 100px 110px 0;
+		width: 580px;
+
+		&--margin {
+			margin: 0 auto 0 0;
+			padding: 70px 0 110px 100px;
+		}
+	}
+
+	&__info {
+		margin-bottom: 10px;
+		font-family: "Montserrat";
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 24 / 13 * 100%;
+	}
+
+	&__date {
+		padding-right: 10px;
+		border-right: 1px solid $default-color;
+
+		&--line {
+			border-color: $black-white;
+		}
+	}
+
+	&__author {
+		padding-left: 10px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-family: "Montserrat";
+		font-weight: 400;
+		font-size: 25px;
+		line-height: 36 / 25 * 100%;
+		text-transform: uppercase;
+	}
+
+	&__text p {
+		margin-bottom: 30px;
+
+		&:last-child p {
+			margin-bottom: 0;
+		}
+	}
+
+	&__img {
+		width: 1000px;
+		height: 450px;
+		object-fit: cover;
+	}
+}
