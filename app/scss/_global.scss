@@ -18,6 +18,18 @@ body {
 	line-height: 46 / 36 * 100%;
 	text-transform: uppercase;
 	text-align: center;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-family: "Roboto";
+		font-weight: 700;
+		font-size: 248px;
+		opacity: 0.18;
+	}
 }
 
 .sr-only {
