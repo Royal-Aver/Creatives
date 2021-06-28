@@ -33,3 +33,12 @@
 	src: url(../fonts/SourceSansPro-Regular.woff) format("woff");
 	font-display: swap;
 }
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-style: normal;
+	src: url(../fonts/Roboto-Bold.woff2) format("woff2");
+	src: url(../fonts/Roboto-Bold.woff) format("woff");
+	font-display: swap;
+}

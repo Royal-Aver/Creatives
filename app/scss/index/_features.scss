@@ -1,0 +1,81 @@
+.features {
+	background-color: $accent-color;
+	padding: 170px 0 120px;
+
+	&__title {
+		position: relative;
+		z-index: 30;
+		margin-bottom: 140px;
+
+		&::before {
+			content: "W";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			font-family: "Roboto";
+			font-weight: 700;
+			color: #5993b2;
+			font-size: 248px;
+		}
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 35px;
+		width: 260px;
+		max-width: 100%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__name {
+		position: relative;
+		font-family: "Montserrat";
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 36 / 18 * 100%;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 15px;
+		padding-top: 150px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			right: 50%;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+			width: 130px;
+			height: 130px;
+			background-color: #2e85aa;
+			border-radius: 50%;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		&--guard::before {
+			background-image: url(../../images/features/icon1.svg);
+		}
+
+		&--search::before {
+			background-image: url(../../images/features/icon2.svg);
+		}
+
+		&--settings::before {
+			background-image: url(../../images/features/icon3.svg);
+		}
+
+		&--answer::before {
+			background-image: url(../../images/features/icon4.svg);
+		}
+	}
+}

@@ -12,6 +12,15 @@ body {
 	margin: 0 auto;
 }
 
+.title {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 46 / 36 * 100%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .sr-only {
 	position: absolute;
 	width: 1px;
