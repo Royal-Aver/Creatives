@@ -7,12 +7,12 @@
 
 	&__item {
 		&--black {
-			background-color: $black-white;
+			background-color: $black-color;
 		}
 
 		&--white {
 			background-color: $header-color;
-			color: $black-white;
+			color: $black-color;
 		}
 	}
 
@@ -40,7 +40,7 @@
 		border-right: 1px solid $default-color;
 
 		&--line {
-			border-color: $black-white;
+			border-color: $black-color;
 		}
 	}
 

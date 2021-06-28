@@ -1,0 +1,80 @@
+.blog {
+	padding: 160px 0 0;
+
+	&__title {
+		position: relative;
+		margin-bottom: 110px;
+		color: $black-color;
+
+		&::before {
+			content: "B";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			font-family: "Roboto";
+			font-weight: 700;
+			font-size: 248px;
+			opacity: 0.18;
+		}
+	}
+
+	&__subtitle {
+		display: block;
+		margin-bottom: 70px;
+		color: $black-color;
+		font-size: 30px;
+		line-height: 37 / 30 * 100%;
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		margin-bottom: 100px;
+	}
+
+	&__item {
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.info {
+	padding: 105px 0 150px;
+	background-color: $accent-color;
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		width: 50%;
+
+		&:nth-child(1) {
+			margin-right: 55px;
+		}
+	}
+
+	&__text {
+		position: relative;
+		padding-left: 100px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			bottom: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 70px;
+			height: 70px;
+			background-image: url(../../images/blog/sketchbook.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}

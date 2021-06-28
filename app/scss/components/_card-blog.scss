@@ -1,0 +1,36 @@
+.card-blog {
+	width: 270px;
+	max-width: 100%;
+	transition: box-shadow 0.5s;
+
+	&:hover {
+		box-shadow: 20px 0 60px 0 rgba(202, 202, 202, 0.35);
+	}
+
+	&__img {
+		margin-bottom: 30px;
+	}
+
+	&__link {
+		&:hover {
+			.card-blog__title {
+				color: $black-color;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 36 / 18 * 100%;
+		color: $accent-color;
+		text-transform: uppercase;
+		text-align: center;
+		transition: color 0.5s;
+	}
+
+	&__text {
+		color: $black-color;
+	}
+}
