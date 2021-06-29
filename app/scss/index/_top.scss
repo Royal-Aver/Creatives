@@ -23,6 +23,14 @@
 		color: $header-color;
 		line-height: 187 / 152 * 100%;
 		text-transform: uppercase;
+
+		@include r($lg) {
+			font-size: 76px;
+		}
+
+		@include r($sm) {
+			font-size: 44px;
+		}
 	}
 
 	&__subtitle {
@@ -33,11 +41,25 @@
 		letter-spacing: 22px;
 		color: $accent-color;
 		text-transform: uppercase;
+
+		@include r($lg) {
+			font-size: 18px;
+			letter-spacing: 12px;
+		}
+
+		@include r($sm) {
+			font-size: 16px;
+			letter-spacing: 6px;
+		}
 	}
 
 	&__link {
 		position: relative;
-		bottom: 110px;
+		bottom: 90px;
+
+		@include r($lg) {
+			bottom: 60px;
+		}
 
 		path {
 			transition: fill 0.7s;

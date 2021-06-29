@@ -6,6 +6,8 @@
 	}
 
 	&__item {
+		height: 450px;
+
 		&--black {
 			background-color: $black-color;
 		}
@@ -25,6 +27,10 @@
 			margin: 0 auto 0 0;
 			padding: 70px 0 110px 100px;
 		}
+	}
+
+	&__link {
+		cursor: pointer;
 	}
 
 	&__info {

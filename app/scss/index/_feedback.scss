@@ -31,6 +31,7 @@
 
 		&::placeholder {
 			color: $default-color;
+			opacity: 0.5;
 		}
 
 		&--textarea {
@@ -46,18 +47,19 @@
 		width: 230px;
 		height: 70px;
 		background-color: $accent-color;
-		font-weight: 500;
+		font-weight: 700;
 		font-size: 24px;
 		line-height: 1;
+		letter-spacing: 2px;
 		text-transform: uppercase;
 		color: $default-color;
-		border: 1px solid transparent;
+		border: 3px solid transparent;
 		transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 
 		&:hover {
 			color: $accent-color;
-			background-color: $header-color;
-			border: 1px solid $accent-color;
+			background-color: transparent;
+			border-color: $accent-color;
 		}
 	}
 }

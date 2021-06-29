@@ -15,6 +15,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		transition: padding 0.5s;
+
+		&--padding {
+			padding: 10px 0;
+		}
 	}
 }
 
@@ -27,13 +32,38 @@
 .menu {
 	&__list {
 		display: flex;
+
+		@include r($lg) {
+			display: block;
+			position: absolute;
+			top: 115px;
+			right: 0;
+			left: 0;
+			padding-top: 30px;
+			background-color: $black-color;
+			text-align: center;
+			height: 100vh;
+			transform: translateX(200%);
+			transition: transform 0.5s;
+		}
+
+		&--active {
+			@include r($lg) {
+				transform: translateX(0%);
+			}
+		}
 	}
 
 	&__item {
-		margin-right: 40px;
+		margin-right: 30px;
 
 		&:last-child {
 			margin-right: 0;
+		}
+
+		@include r($lg) {
+			margin-right: 0;
+			padding: 20px 10px;
 		}
 	}
 
@@ -49,12 +79,40 @@
 		&:hover {
 			border-bottom: 5px solid $accent-color;
 		}
+
+		&--padding {
+			padding: 0 10px 30px;
+		}
+	}
+}
+
+.burger {
+	@include r($lg) {
+		width: 50px;
+		background-color: transparent;
+	}
+
+	&__line {
+		@include r($lg) {
+			display: block;
+			height: 5px;
+			margin-bottom: 10px;
+			background-color: $default-color;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 
 .social {
 	display: flex;
 	align-items: center;
+
+	@include r($sm) {
+		display: none;
+	}
 
 	&__item {
 		margin-right: 30px;
