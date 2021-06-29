@@ -2,6 +2,7 @@
 	padding: 140px 0 125px;
 
 	&__title {
+		position: relative;
 		margin-bottom: 140px;
 		color: $black-color;
 
@@ -16,6 +17,7 @@
 			font-weight: 700;
 			font-size: 248px;
 			opacity: 0.18;
+			color: $black-color;
 		}
 	}
 
