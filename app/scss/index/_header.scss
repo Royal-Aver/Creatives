@@ -50,6 +50,7 @@
 		&--active {
 			@include r($lg) {
 				transform: translateX(0%);
+				top: 95px;
 			}
 		}
 	}

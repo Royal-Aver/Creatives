@@ -2,6 +2,10 @@
 	background-color: $accent-color;
 	padding: 170px 0 120px;
 
+	@include r($md) {
+		padding: 100px 0 70px;
+	}
+
 	&__title {
 		position: relative;
 		z-index: 30;
@@ -46,16 +50,6 @@
 		@include r($xl) {
 			justify-content: center;
 			flex-wrap: wrap;
-			width: 620px;
-			margin: 0 auto;
-		}
-
-		@include r($lg) {
-			width: 400px;
-		}
-
-		@include r($sm) {
-			width: auto;
 		}
 	}
 
@@ -69,6 +63,7 @@
 		}
 
 		@include r($xl) {
+			width: 35%;
 			margin-bottom: 50px;
 
 			&:nth-child(2) {
@@ -76,7 +71,8 @@
 			}
 		}
 
-		@include r($lg) {
+		@include r($md) {
+			width: 60%;
 			margin-right: 0;
 		}
 	}
