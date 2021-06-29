@@ -19,11 +19,44 @@
 			font-size: 248px;
 			opacity: 0.18;
 			z-index: -1;
+
+			@include r($md) {
+				font-size: 180px;
+			}
+
+			@include r($sm) {
+				top: 15px;
+				font-size: 140px;
+			}
+		}
+
+		@include r($md) {
+			font-size: 28px;
+		}
+
+		@include r($sm) {
+			margin-bottom: 120px;
+			font-size: 24px;
 		}
 	}
 
 	&__list {
 		display: flex;
+
+		@include r($xl) {
+			justify-content: center;
+			flex-wrap: wrap;
+			width: 620px;
+			margin: 0 auto;
+		}
+
+		@include r($lg) {
+			width: 400px;
+		}
+
+		@include r($sm) {
+			width: auto;
+		}
 	}
 
 	&__item {
@@ -32,6 +65,18 @@
 		max-width: 100%;
 
 		&:last-child {
+			margin-right: 0;
+		}
+
+		@include r($xl) {
+			margin-bottom: 50px;
+
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+
+		@include r($lg) {
 			margin-right: 0;
 		}
 	}
