@@ -8,5 +8,17 @@
 		justify-content: space-between;
 		font-size: 13px;
 		line-height: 1;
+
+		@include r($sm) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__copy {
+		margin-right: 30px;
+
+		@include r($sm) {
+			margin-bottom: 20px;
+		}
 	}
 }

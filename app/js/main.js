@@ -31,7 +31,7 @@ $(function () {
 		$('body,html').animate({ scrollTop: top }, 1500);
 	});
 
-	$('.burger').on('click', function () {
+	$('.burger, .menu__link').on('click', function () {
 		$('.menu__list').toggleClass('menu__list--active');
 	});
 
