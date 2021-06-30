@@ -4,17 +4,33 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 
+	@include r($lg) {
+		padding: 120px 0 100px;
+	}
+
 	&__title {
 		margin-bottom: 145px;
+
+		@include r($sm) {
+			font-size: 22px;
+			margin-bottom: 90px;
+		}
 	}
 }
 
 .form {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	max-width: 1140px;
+	width: 100%;
+
+	@include r($xl) {
+		flex-direction: column;
+	}
 
 	&__label {
-		margin: 0 30px 40px 0;
+		margin-bottom: 40px;
 
 		&:last-child {
 			margin-right: 0;
@@ -22,6 +38,7 @@
 	}
 
 	&__field {
+		display: block;
 		padding: 0 20px;
 		width: 360px;
 		height: 50px;
@@ -34,11 +51,26 @@
 			opacity: 0.5;
 		}
 
+		@include r($sm) {
+			width: 280px;
+		}
+
 		&--textarea {
 			resize: none;
 			padding-top: 15px;
 			width: 1140px;
 			height: 150px;
+
+			@include r($xl) {
+				width: 730px;
+			}
+			@include r($md) {
+				width: 560px;
+			}
+
+			@include r($sm) {
+				width: 280px;
+			}
 		}
 	}
 
