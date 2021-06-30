@@ -1,6 +1,10 @@
 .blog {
 	padding: 160px 0 0;
 
+	@include r($lg) {
+		padding: 100px 0 0;
+	}
+
 	&__title {
 		position: relative;
 		margin-bottom: 110px;
@@ -17,6 +21,26 @@
 			font-weight: 700;
 			font-size: 248px;
 			opacity: 0.18;
+
+			@include r($md) {
+				font-size: 180px;
+			}
+
+			@include r($sm) {
+				font-size: 140px;
+			}
+		}
+
+		@include r($md) {
+			font-size: 28px;
+		}
+
+		@include r($lg) {
+			margin-bottom: 80px;
+		}
+
+		@include r($sm) {
+			font-size: 24px;
 		}
 	}
 
@@ -27,17 +51,48 @@
 		font-size: 30px;
 		line-height: 37 / 30 * 100%;
 		text-align: center;
+
+		@include r($lg) {
+			font-size: 24px;
+		}
+
+		@include r($lg) {
+			font-size: 20px;
+		}
 	}
 
 	&__list {
 		display: flex;
 		margin-bottom: 100px;
+
+		@include r($xl) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		@include r($sm) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__item {
 		margin-right: 30px;
 
 		&:last-child {
+			margin-right: 0;
+		}
+
+		@include r($xl) {
+			width: 45%;
+			margin-bottom: 40px;
+
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+
+		@include r($sm) {
+			width: 100%;
 			margin-right: 0;
 		}
 	}
@@ -47,8 +102,16 @@
 	padding: 105px 0 150px;
 	background-color: $accent-color;
 
+	@include r($md) {
+		padding: 50px 0 30px;
+	}
+
 	&__list {
 		display: flex;
+
+		@include r($md) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__item {
@@ -56,12 +119,25 @@
 
 		&:nth-child(1) {
 			margin-right: 55px;
+
+			@include r($sm) {
+				margin-right: 0;
+			}
+		}
+
+		@include r($md) {
+			width: 100%;
+			margin-bottom: 50px;
 		}
 	}
 
 	&__text {
 		position: relative;
 		padding-left: 100px;
+
+		@include r($sm) {
+			padding: 60px 0 0;
+		}
 
 		&::before {
 			content: "";
@@ -75,6 +151,13 @@
 			background-image: url(../../images/blog/sketchbook.svg);
 			background-repeat: no-repeat;
 			background-size: contain;
+
+			@include r($sm) {
+				top: -20px;
+				left: 50%;
+				right: 50%;
+				transform: translateX(-50%);
+			}
 		}
 	}
 }

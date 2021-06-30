@@ -7,6 +7,10 @@
 	&__content {
 		width: 50%;
 
+		@include r($lg) {
+			width: 100%;
+		}
+
 		&--black {
 			background-color: $black-color;
 			padding: 70px 80px 110px 210px;
@@ -16,6 +20,10 @@
 				background-color: $header-color;
 				color: $black-color;
 
+				.articles__date {
+					border-color: $black-color;
+				}
+
 				.articles__title {
 					color: $accent-color;
 				}
@@ -23,6 +31,14 @@
 				.articles__link {
 					border-bottom: 1px solid $accent-color;
 				}
+			}
+
+			@include r($xl) {
+				padding: 70px 80px 60px 60px;
+			}
+
+			@include r($sm) {
+				padding: 20px 10px;
 			}
 		}
 
@@ -36,6 +52,10 @@
 				background-color: $black-color;
 				color: $header-color;
 
+				.articles__date {
+					border-color: $default-color;
+				}
+
 				.articles__title {
 					color: $accent-color;
 				}
@@ -44,14 +64,26 @@
 					border-bottom: 1px solid $accent-color;
 				}
 			}
+
+			@include r($xl) {
+				padding: 70px 80px 60px 80px;
+			}
+
+			@include r($sm) {
+				padding: 20px 10px;
+			}
 		}
 	}
 
 	&__img {
 		width: 50%;
-		background-position: top center;
+		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		@include r($lg) {
+			display: none;
+		}
 	}
 
 	&__info {
@@ -65,6 +97,7 @@
 	&__date {
 		padding-right: 10px;
 		border-right: 1px solid $default-color;
+		transition: border-color 0.5s;
 
 		&--line {
 			border-color: $black-color;
@@ -93,7 +126,7 @@
 	&__text p {
 		margin-bottom: 30px;
 
-		&:last-child p {
+		&:last-child {
 			margin-bottom: 0;
 		}
 	}
