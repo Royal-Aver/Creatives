@@ -39,6 +39,7 @@
 			top: 115px;
 			right: 0;
 			left: 0;
+			opacity: 0.95;
 			padding-top: 30px;
 			background-color: $black-color;
 			text-align: center;
@@ -91,6 +92,22 @@
 	@include r($lg) {
 		width: 50px;
 		background-color: transparent;
+
+		// &--active {
+		// 	& .burger__line {
+		// 		transform: scale(0);
+
+		// 		&:first-child {
+		// 			transform: rotate(-45deg);
+		// 			top: calc(50% - 1px);
+		// 		}
+
+		// 		&:last-child {
+		// 			transform: rotate(45deg);
+		// 			bottom: calc(50% - 1px);
+		// 		}
+		// 	}
+		// }
 	}
 
 	&__line {

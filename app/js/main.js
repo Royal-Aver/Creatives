@@ -35,4 +35,8 @@ $(function () {
 		$('.menu__list').toggleClass('menu__list--active');
 	});
 
+	// $('.burger').on('click', function () {
+	// 	$('.burger').toggleClass('burger--active');
+	// });
+
 });
